@@ -9,7 +9,7 @@ npm install
 # API_URL=http://localhost:8000/api/v1
 
 npm run dev
-# Open browser at http://localhost:5173 (or the URL shown in terminal)
+# Open browser at the URL shown in terminal
 
 
 backend setup:
