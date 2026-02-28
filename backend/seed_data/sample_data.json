@@ -1,0 +1,162 @@
+{
+"sample_assets": [ 
+  { 
+    "id": 1, 
+    "asset_tag": "ANT-001", 
+    "type": "ANTENNA", 
+    "location": "Site A - Rooftop", 
+    "vendor": "VendorX", 
+    "installed_on": "2023-06-01", 
+    "status": "ACTIVE" 
+  }, 
+  { 
+    "id": 2, 
+    "asset_tag": "RRU-100", 
+    "type": "RRU", 
+    "location": "Site B - Tower", 
+    "vendor": "VendorY", 
+    "installed_on": "2024-01-10", 
+    "status": "ACTIVE" 
+  }, 
+  { 
+    "id": 3, 
+    "asset_tag": "BTS-21", 
+    "type": "BTS", 
+    "location": "Site C - Ground", 
+    "vendor": "VendorZ", 
+    "installed_on": "2022-11-15", 
+    "status": "ACTIVE" 
+  }, 
+  { 
+    "id": 4, 
+    "asset_tag": "SW-03", 
+    "type": "SWITCH", 
+    "location": "NOC - Rack 3", 
+    "vendor": "NetCorp", 
+    "installed_on": "2021-08-05", 
+    "status": "ACTIVE" 
+  }, 
+  { 
+    "id": 5, 
+    "asset_tag": "ANT-OLD-09", 
+    "type": "ANTENNA", 
+    "location": "Site D - Pole", 
+    "vendor": "VendorX", 
+    "installed_on": "2018-03-20", 
+    "status": "DECOMMISSIONED" 
+  } 
+],
+"sample_plans": 
+[ 
+  { 
+    "id": 1, 
+    "asset_id": 1, 
+    "frequency_days": 90, 
+    "next_due": "2025-01-10T00:00:00Z", 
+    "instructions": "Inspect antenna mounts, check connectors, torque bolts." 
+  }, 
+  { 
+    "id": 2, 
+    "asset_id": 2, 
+    "frequency_days": 30, 
+    "next_due": "2024-12-01T08:00:00Z", 
+    "instructions": "Verify RRU firmware, check power supply and temperature logs." 
+  }, 
+  { 
+    "id": 3, 
+    "asset_id": 3, 
+    "frequency_days": 180, 
+    "next_due": "2025-06-15T09:00:00Z", 
+    "instructions": "Full BTS preventive maintenance: filters, fans, alarm tests." 
+  }, 
+  { 
+    "id": 4, 
+    "asset_id": 4, 
+    "frequency_days": 365, 
+    "next_due": "2025-11-01T10:00:00Z", 
+    "instructions": "Switch OS upgrade window; backup configs and verify redundancy." 
+  }, 
+  { 
+    "id": 5, 
+    "asset_id": 5, 
+    "frequency_days": 365, 
+    "next_due": "2023-01-01T00:00:00Z", 
+    "instructions": "Decommission check (asset is decommissioned)." 
+  } 
+],
+"sample_tasks":
+[ 
+  { 
+    "id": 1, 
+    "plan_id": 2, 
+    "asset_id": 2, 
+    "assigned_to": 3, 
+    "due_ts": "2024-12-01T08:00:00Z", 
+    "status": "PENDING", 
+    "notes": "" 
+  }, 
+  { 
+    "id": 2, 
+    "plan_id": 1, 
+    "asset_id": 1, 
+    "assigned_to": 1, 
+    "due_ts": "2025-01-10T00:00:00Z", 
+    "status": "PENDING", 
+    "notes": "" 
+  }, 
+  { 
+    "id": 3, 
+    "plan_id": 3, 
+    "asset_id": 3, 
+    "assigned_to": 2, 
+    "due_ts": "2025-06-15T09:00:00Z", 
+    "status": "PENDING", 
+    "notes": "" 
+  }, 
+  { 
+    "id": 4, 
+    "plan_id": 4, 
+    "asset_id": 4, 
+    "assigned_to": null, 
+    "due_ts": "2025-11-01T10:00:00Z", 
+    "status": "PENDING", 
+    "notes": "" 
+  }, 
+  { 
+"id": 5, 
+"plan_id": 2, 
+"asset_id": 2, 
+"assigned_to": 3, 
+"due_ts": "2024-11-01T08:00:00Z", 
+"status": "DONE", 
+"notes": "Replaced faulty power connector" 
+} 
+],
+
+"sample_workers":[ 
+  { 
+    "id": 1, 
+    "name": "Ravi Kumar", 
+    "email": "ravi.kumar@example.com", 
+    "skills": ["ANTENNA", "RRU"] 
+  }, 
+  { 
+    "id": 2, 
+    "name": "Anita Sharma", 
+    "email": "anita.sharma@example.com", 
+    "skills": ["BTS", "SWITCH"] 
+  }, 
+  { 
+    "id": 3, 
+    "name": "Sanjay Patel", 
+    "email": "sanjay.patel@example.com", 
+    "skills": ["RRU", "BTS"] 
+  }, 
+  { 
+    "id": 4, 
+    "name": "Priya Singh", 
+    "email": "priya.singh@example.com", 
+    "skills": ["ANTENNA", "SWITCH"] 
+  } 
+]
+}

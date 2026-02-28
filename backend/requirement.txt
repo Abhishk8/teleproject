@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+sqlalchemy
+pydantic
+apscheduler
+pytest
+httpx
+pydantic[email]
+requests
